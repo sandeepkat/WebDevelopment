@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>f(n) = (n - 1) + (n - 2)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet"> 
+</head>
+<body>
+	<div class="section">
+		<div class="row">
+			<div class="col">
+				<!-- title and intro -->
+				<h1>Fibonacci Calculator</h1>
+				<p>
+					Enter a valid number, any integer greater than or equal to zero, in the input field down below and press "Submit" when finished.
+					Once a valid number has been entered, the output and the resulting Fibonacci sequence of the input will be displayed.
+				</p>
+
+				<!-- text input and submit button -->
+				<input type="text" placeholder="Enter a number" id="inputText">
+				<input type="submit" value="Submit" id="submitQuery">
+				
+				<!-- the fibonacci result of input -->
+				<p id="output"></p>
+			</div>
+		</div>
+
+		<!-- the fibonacci table -->
+		<div class="row">
+			<div class="col">
+				<h2 class="hide" id="table-h2">Fibonacci Sequence</h2>
+				<p id="fibTable"></p>
+				<a class="table-btn hide" href="#" onclick="restart()">Restart</a>
+				<a class="table-btn hide" id="control-btn" href="#">Pause</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="myScripts.js"></script>
+</body>
+</html>

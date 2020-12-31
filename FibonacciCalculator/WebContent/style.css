@@ -1,0 +1,179 @@
+* {
+    color: #393939;
+
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #fffcef;
+}
+
+/* main header */
+h1 {
+    color: #eb8908;
+    
+    font-size: 32px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+	text-shadow: 0px 1px 1px rgba(71, 71, 71, 0.6);
+}
+
+/* table header */
+h2 {
+	color: #eb8908;
+	
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+    text-shadow: 0px 1px 1px rgba(71, 71, 71, 0.6);
+}
+
+/*****************************************************/
+/* SECTION CLASS
+/*****************************************************/
+/* all elements in section class */
+.section * {
+    margin: 10px 0;
+}
+
+.section {
+	margin: 3.5% 0;
+}
+
+/*****************************************************/
+/* ROW COL STUFF
+/*****************************************************/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    text-align: center;
+    
+    flex: 83.33%;
+    max-width: 83.33%;
+
+    padding: 0 0.5%;
+    margin-left: 8.33%;
+}
+
+/*****************************************************/
+/* TEXT INPUT FIELD
+/*****************************************************/
+input[type=text] {
+    background-color: #e2d9af;
+
+    border-radius: 9px;
+    border: none;
+
+    padding: 8px;
+}
+
+/*****************************************************/
+/* SUBMIT BUTTON
+/*****************************************************/
+/* custom submit button */
+input[type=submit],
+.table-btn {
+    color: #ffffff;
+    background-color: #eb8908;
+
+    font-size: 16px;
+    letter-spacing: 4px;
+	display: inline-block;
+
+    padding: 8px;
+    margin-left: 10px;
+
+    border-radius: 9px;
+    border: 2px solid #ca7608;
+
+    box-shadow: 0px 3px 5px rgba(50,50,93,0.1),
+                0px 1px 3px rgba(0,0,0,0.07);
+    text-shadow: 0px 2px 3px rgba(50,50,93,0.7);
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/* shift 1px when clicked */
+input[type=submit]:active,
+.table-btn:active {
+    position: relative;
+    top: -1px;
+}
+
+/* show pointer when hovered */
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.table-btn {
+    text-decoration: none;
+    width: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+/*****************************************************/
+/* TABLE STUFF
+/*****************************************************/
+.results {
+    color: #ffffff;
+    background-color: #e2d9af;
+
+    border-radius: 9px;
+    padding: 2%;
+}
+
+table {
+    text-align: center;
+
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #ca7608;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: #cec392;
+
+    font-weight: 600;
+}
+
+td {
+    background-color: #e9e4c9;
+}
+
+/*****************************************************/
+/* TRAVERSE TABLE
+/*****************************************************/
+.highlightOutput {
+	color: white;
+    background-color: #eb8908;
+
+    font-weight: bold;
+}
+
+.highlightNumbers {
+	color: white;
+    background-color: #eea545;
+
+    font-weight: bold;
+}
